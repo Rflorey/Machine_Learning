@@ -11,6 +11,8 @@ This repository contains implementations of various machine learning algorithms 
 - `simple_clustering_class.py`: Reusable class for clustering analysis with built-in visualization
 - `K_means_example.py`: Customer segmentation example using K-means clustering
 - `best_K_means_example.py`: Script for finding optimal K value using elbow method
+- `standard_scaler_example.py`: Example implementation of data scaling using StandardScaler
+- `segmenting_pca_example.py`: Demonstrates customer segmentation using PCA and K-means clustering
 
 ## Getting Started
 
@@ -37,6 +39,7 @@ clustering.fit(n_clusters=4)
 - numpy
 - scikit-learn
 - matplotlib
+- seaborn
 
 ## License
 
