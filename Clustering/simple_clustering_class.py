@@ -4,7 +4,6 @@ from sklearn.cluster import KMeans
 from sklearn.preprocessing import StandardScaler
 import matplotlib.pyplot as plt
 
-
 class SimpleClusterAnalysis:
     def __init__(self):
         """Initialize the clustering analysis class"""
@@ -16,11 +15,6 @@ class SimpleClusterAnalysis:
     
     def load_data(self, data_source, index_col=None, parse_dates=False):
         """Load data from CSV file or DataFrame"""
-        # if isinstance(data_source, str):
-        #     self.df = pd.read_csv(data_source)
-        # else:
-        #     self.df = data_source.copy()
-        # return self
         if isinstance(data_source, str):
             self.df = pd.read_csv(data_source, 
                                 index_col=index_col, 
@@ -161,28 +155,28 @@ class SimpleClusterAnalysis:
 
 # Examples:
 # Example usage 1
-# ''' Perform clustering analysis on shopping data '''
-# clustering = SimpleClusterAnalysis()
-# clustering.load_data("https://static.bc-edx.com/mbc/ai/m2/datasets/shopping-data.csv")
-# clustering.create_dummies(['Card Type'])
-# print(clustering.head())
-# clustering.preprocess(
-#     drop_columns=["CustomerID"],
-#     scale_columns={"Annual Income": 1000}
-# )
-# print(clustering.head())
-# clustering.fit(n_clusters=4)
-# clustering.plot("Annual Income", "Spending Score")
-# results = clustering.get_results()
-# print(results.head())
+''' Perform clustering analysis on shopping data '''
+clustering = SimpleClusterAnalysis()
+clustering.load_data("https://static.bc-edx.com/mbc/ai/m2/datasets/shopping-data.csv")
+clustering.create_dummies(['Card Type'])
+print(clustering.head())
+clustering.preprocess(
+    drop_columns=["CustomerID"],
+    scale_columns={"Annual Income": 1000}
+)
+print(clustering.head())
+clustering.fit(n_clusters=4)
+clustering.plot("Annual Income", "Spending Score")
+results = clustering.get_results()
+print(results.head())
 
 # Example usage 2
-''' Find the best k value for clustering '''
-clustering = SimpleClusterAnalysis()
-df_clustering = clustering.load_data("https://static.bc-edx.com/mbc/ai/m2/datasets/option-trades.csv", 
-                         index_col="date", 
-                         parse_dates=True
-                        )
-clustering.find_elbow(max_k=10)
-clustering.plot_elbow()
+# ''' Find the best k value for clustering '''
+# clustering = SimpleClusterAnalysis()
+# df_clustering = clustering.load_data("https://static.bc-edx.com/mbc/ai/m2/datasets/option-trades.csv", 
+#                          index_col="date", 
+#                          parse_dates=True
+#                         )
+# clustering.find_elbow(max_k=10)
+# clustering.plot_elbow()
 
