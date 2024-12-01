@@ -1,7 +1,7 @@
 # Import the required libraries and dependencies
 import pandas as pd
 from sklearn.cluster import KMeans
-import matplotlib
+
  
 # Read in the CSV file and create the Pandas DataFrame
 df_shopping = pd.read_csv("https://static.bc-edx.com/mbc/ai/m2/datasets/shopping-data.csv")
@@ -12,6 +12,7 @@ print(df_shopping.head())
 print(df_shopping.dtypes)
 
 # Build the encodeCard helper function
+
 # Credit card purchases should encode to 1
 # Debit card purchases should encode to 0
 def encodeCard(card_type):
