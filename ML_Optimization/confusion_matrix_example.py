@@ -3,8 +3,9 @@ from sklearn.linear_model import LogisticRegression
 from sklearn.model_selection import train_test_split
 from sklearn.metrics import confusion_matrix
 import matplotlib.pyplot as plt
+
 # Import the data
-df = pd.read_csv("https://static.bc-edx.com/mbc/ai/m5/datasets/blobs_data.csv")
+df = pd.read_csv("ML_Optimization/data/blobs_data.csv")
 print(df.head())
 
 # Visualize the data
