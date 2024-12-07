@@ -1,40 +1,37 @@
-# Machine Learning Analysis Tools
+# Machine Learning Examples
 
-A collection of machine learning scripts and tools, focusing on clustering analysis and other ML techniques.
+This repository contains a collection of Python scripts demonstrating various machine learning concepts and techniques, including:
 
-## Overview
+- Support Vector Machines (SVM)
+- Random Forests
+- Neural Networks
+- K-Means Clustering
+- Linear and Logistic Regression
+- Decision Trees
+- Principal Component Analysis (PCA)
 
-This repository contains implementations of various machine learning algorithms and analysis tools, with a current focus on clustering analysis. The tools are designed to be both educational and practical for real-world data analysis.
+## Credit
 
-## Scripts
+These scripts were created as part of the coursework for the Machine Learning & AI Micro Boot Camp at Arizona State University (2023). They serve as educational examples and demonstrations of machine learning concepts.
 
-### Clustering Analysis
-- `simple_clustering_class.py`: Reusable class for clustering analysis with built-in visualization
-- `K_means_example.py`: Customer segmentation example using K-means clustering
-- `best_K_means_example.py`: Script for finding optimal K value using elbow method
-- `standard_scaler_example.py`: Example implementation of data scaling using StandardScaler
-- `segmenting_pca_example.py`: Demonstrates customer segmentation using PCA and K-means clustering
+## Requirements
 
-### Regression Analysis
-- `linear_regression_example.py`: Demonstrates linear regression for sales prediction based on advertising spend
-- `logistic_regression_example.py`: Binary classification example for predicting malware in Android applications
-
-## Getting Started
-
-### Installation
+See `requirements.txt` for a list of Python dependencies. Install using:
 
 ```bash
 pip install -r requirements.txt
 ```
 
-## Prerequisites
+## Contents
 
-- pandas
-- numpy
-- scikit-learn
-- matplotlib
-- seaborn
+- SVM examples for classification
+- Random Forest implementations with resampling techniques
+- Neural Network examples for binary and multiclass classification
+- Clustering examples using K-means
+- Regression examples (both linear and logistic)
+- Decision tree implementations with visualization
+- PCA for dimensionality reduction
 
-## License
+## Usage
 
-This project is licensed under the MIT License - see the LICENSE file for details.
+Each script can be run independently and includes comments explaining the concepts and implementation details. Make sure to have all required dependencies installed before running the scripts.
